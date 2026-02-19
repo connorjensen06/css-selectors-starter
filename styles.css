@@ -324,7 +324,7 @@ span{
     select the h2 in the second section using the ID, tag name, and child/descendant selectors
 */
 /* ----- */
-#navigation h2{
+#nav h2{
     padding: 12px 0;
     background-color: var(--green);
     color: var(--white);
@@ -336,7 +336,7 @@ span{
     select the unordered list in the navigation using the tag names and child/descendant selector
 */
 /* ----- */
-#navigation ul{
+#nav ul{
     display: block;
     list-style-type: none;
     padding: 0;
@@ -349,7 +349,7 @@ span{
     select the list items in the navigation using the tag names and child/descendant selector
 */
 /* ----- */
-#navigation li{
+#nav li{
     display: block;
     width: 100%;
 }
@@ -360,7 +360,7 @@ span{
     select the anchor tags in the navigation using the tag names and child/descendant selectors
 */
 /* ----- */
-#navigation a{
+#nav a{
     display: block;
     width: 90%;
     margin: 16px auto;
@@ -381,7 +381,7 @@ span{
     select the anchor tags in the navigation on hover using the tag names, pseudo-class, and child/descendant selectors
 */
 /* ----- */
-#navigation a:hover{
+#nav a:hover{
     background-color: var(--white);
     color: var(--green);
     box-shadow: var(--box-shadow-sm);
@@ -780,7 +780,7 @@ caption{
     select the first column in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-#table-styles tbody:first-child{ 
+#table-styles tbody td:first-child{ 
     font-weight: bold;
 }
 
@@ -840,7 +840,7 @@ tfoot{
     select the second div in the border styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-#boarders div:nth-child(2){
+#borders div:nth-child(2){
     width: 250px;
     height: 250px;
     border: 6px dotted var(--dv-orange);
@@ -891,7 +891,7 @@ tfoot{
     select the pseudo-elements section using the ID selector
 */
 /* ----- */
-#pseudo-elements{
+#pseudo-els{
     position: relative;
 }
 
@@ -901,7 +901,7 @@ tfoot{
     select the div in the pseudo-elements section using the ID, child/descendant, and tag name selectors
 */
 /* ----- */
-#pseudo-elements div{
+#pseudo-els div{
     width: 275px;
     height: 275px;
     margin: 56px auto 32px;
@@ -916,7 +916,7 @@ tfoot{
     select the div's before element in the pseudo-elements section using the ID, child/descendant, pseudo-element, and tag name selectors
 */
 /* ----- */
-#pseudo-elements div::before{
+#pseudo-els div::before{
     content: "\2730";
     padding: 12px 24px;
     border-radius: 50%;
@@ -936,7 +936,7 @@ tfoot{
     select the image in the pseudo-elements section using the ID, child/descendant, and tag name selectors
 */
 /* ----- */
-#pseudo-elements img{
+#pseudo-els img{
     width: 200px;
     height: 200px;
     margin: 0 auto;
