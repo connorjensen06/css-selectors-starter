@@ -252,7 +252,7 @@ main > section {
     background-color: var(--white);
     box-shadow: var(--box-shadow-sm);
 }
-
+ 
 /* --------------- */
 /* PARAGRAPH STYLES */
 /* --------------- */
@@ -262,7 +262,7 @@ TO DO:
 select the paragraph elements by tag name
 */
 /* ----- */
-p{
+p {
     padding: 1rem; 
     font-size: 1.2rem;
     max-width: 65ch;
@@ -278,7 +278,7 @@ p{
     select the images and SVGs by tag names
 */
 /* ----- */
-img, svg{
+img, svg {
     display: block;
     width: 100%;
     height: auto;
@@ -293,7 +293,7 @@ TO DO:
 select all of the spans by tag name
 */
 /* ----- */
-span{
+span {
     display: block;
 }
 
@@ -303,13 +303,12 @@ span{
 /* --------------- */
 /* IMAGE STYLES SECTION CONTENT STYLES */
 /* --------------- */
-/* ----- */
 /* 
     TO DO:
     select the h2 in the first section using the ID, tag name, and child/descendant selectors
 */
 /* ----- */
-#image h2{
+#image h2 {
     padding: 12px 0;
     background-color: var(--blue);
     color: var(--white);
@@ -324,7 +323,7 @@ span{
     select the h2 in the second section using the ID, tag name, and child/descendant selectors
 */
 /* ----- */
-#nav h2{
+#nav h2 {
     padding: 12px 0;
     background-color: var(--green);
     color: var(--white);
@@ -610,7 +609,7 @@ input[type="submit"]:focus{
     select the first div in the more styling section using the ID, tag name and direct descendant selectors
   */
   /* ----- */
-#more > div:first-child{
+#more > div {
     width: 300px;
     height: 300px;
     background-color: var(--dv-red);
@@ -623,7 +622,7 @@ input[type="submit"]:focus{
     select the second div in the more styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-#more div:nth-child(2){
+#more > div > div {
     width: 250px;
     height: 250px;
     background-color: var(--dv-orange);
@@ -647,7 +646,7 @@ input[type="submit"]:focus{
     select the fourth div in the pseudo-class styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#more .fourth{
+#more > div > div > div > div {
     width: 150px;
     height: 150px;
     background-color: var(--dv-mint);
@@ -659,7 +658,7 @@ input[type="submit"]:focus{
     select the last div in the more styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#more .last{
+#more .inner{
     width: 100px;
     height: 100px;
     background-color: var(--dv-lt-blue);
@@ -674,7 +673,7 @@ input[type="submit"]:focus{
     select the section with the ID of software by its ID 
 */
 /* ----- */
-#software{
+#software {
     margin-top: 16px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -689,7 +688,7 @@ input[type="submit"]:focus{
 /* ----- */
 #software a{
     width: 100px;
-    height: auto;
+    height: 100px;
     margin: 0 auto;
     background-color: var(--dv-lime);
     text-decoration: none;
@@ -715,6 +714,8 @@ input[type="submit"]:focus{
 /* ----- */
 #software svg{
     stroke: var(--dk-gray);
+    height: 95%;
+    width: 97%;
 }
 
 /* ----- */
@@ -759,7 +760,7 @@ caption{
     select the table header cells in the table styles section using the element/tag name, descendant, and ID selectors
 */
 /* ----- */
-#table-styles thead th{ 
+#table thead th{ 
     background-color: var(--blue);
     color: var(--white);
 }
@@ -770,7 +771,7 @@ caption{
     select the odd table rows in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-#table-styles tbody tr:nth-child(odd){ 
+#table tbody tr:nth-child(odd){ 
     background-color: var(--dv-orange);
 }
 
@@ -780,7 +781,7 @@ caption{
     select the first column in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-#table-styles tbody td:first-child{ 
+#table tbody td:first-child{ 
     font-weight: bold;
 }
 
@@ -790,8 +791,8 @@ caption{
     select the table heading cells (th) and the table data cells in the table styles section using the element/tag name and multiple element selectors
 */
 /* ----- */
-#table-styles th, 
-#table-styles td{ 
+#table th, 
+#table td{ 
     border: 1px solid var(--dk-gray);
     padding: 4px;
 }
@@ -827,7 +828,7 @@ tfoot{
     select the first div in the border styling section using the ID, tag name and direct descendant selectors
   */
   /* ----- */
-#borders > div:first-child{
+#borders > div{
     width: 300px;
     height: 300px;
     margin: 16px auto;
@@ -840,7 +841,7 @@ tfoot{
     select the second div in the border styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-#borders div:nth-child(2){
+#borders > div > div{
     width: 250px;
     height: 250px;
     border: 6px dotted var(--dv-orange);
@@ -852,7 +853,7 @@ tfoot{
     select the third div in the border styling section using the ID, descendant, and class name selectors
 */
 /* ----- */
-#borders .third{
+#borders .dashed {
     width: 200px;
     height: 200px;
     border: 6px dashed var(--dv-yellow);
@@ -864,7 +865,7 @@ tfoot{
     select the fourth div in the pseudo-class styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#borders .fourth{
+#borders > div > div > div > div{
     width: 150px;
     height: 150px;
     border: 6px double var(--dv-mint);
@@ -876,7 +877,7 @@ tfoot{
     select the last div in the more styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#borders .last{
+#borders > div > div > div > div > div{
     width: 100px;
     height: 100px;
     border: 6px inset var(--dv-lt-blue);
